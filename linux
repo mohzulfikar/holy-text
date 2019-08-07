@@ -158,11 +158,11 @@ M- => Alt/cmd/esc key, stands for modify-
 [Symbols]
 Tilda [~] : home/
 wildcards :
-*  = 
-?  =
+*  = Match 1 or more char  => file* = fileA = fileSOMETHING = file.<extensions>
+?  = Match 1 char  => file? = file1 = fileA =/= fileAB
 [] = 
 hidden folder use ls -a command
-awalan '.' = hidden
+file with '.' prefix = hidden
 .  = current folder
 .. = parent folder
        
