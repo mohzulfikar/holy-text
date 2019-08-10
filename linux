@@ -2,16 +2,14 @@ t
 pwd -> print working directory
 xargs
 echo
-cd
-ls
+cd -> change directory
+ls -> list directory contents
     demo: list directory & its file ft. braces expansion
           ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
     flag : -a
            -l
            -F
-Redirection:
 
-Braces expansion:
 Navigating :
 touch -> make a file
     usage: touch file
@@ -154,15 +152,20 @@ M-E = redo
 M- => Alt/cmd/esc key, stands for modify-
 ^ => ctrl / control key
 
-
-[Symbols]
+[Features & Symbols]
 Tilda [~] : home/
+Redirection: create a file based on the command output stream data
+    demo = ls -lh > out.txt
+
+Braces expansion: for find/search/create file/directory with some pattern
+    demo = 
 wildcards :
 *  = Match 1 or more char  => file* = fileA = fileSOMETHING = file.<extensions>
 ?  = Match 1 char  => file? = file1 = fileA =/= fileAB
-[] = 
-hidden folder use ls -a command
+[] = Match in the bracket only  => file[1-3] = file1 = file 2 =/= file 4
+
+[protip]
+to view hidden folder use ls -a command
 file with '.' prefix = hidden
 .  = current folder
 .. = parent folder
-       
