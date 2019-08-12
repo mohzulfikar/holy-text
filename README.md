@@ -1,2 +1,2 @@
 # holy-text
-Classic Cheatsheet Repo
+A Classic Cheatsheet Repo
