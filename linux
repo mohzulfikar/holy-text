@@ -40,11 +40,11 @@ cp -> copy
            cp <file> <destination>
            cp <file1> <file2>.. <destination>
     flag : -r recursively copy folder and its content
-mv -> move & renaming
-    usage : mv oldfile newfile
-            mv oldfolder/ newfolder  <-- renaming
+mv -> moving & renaming file or directory
+    usage : mv <source> <target>
+     demo : mv oldfilename newfilename       <-- renaming
+            mv oldfoldername/ newfoldername  <-- renaming
             mv newfolder/ ~/Documents/
-            mv <source> <target>
             mv ~/Document/newfolder/ ./jackpot
 locate -> locate/search for file
     usage : locate <path_pattern>
@@ -78,7 +78,7 @@ find -> list every single file(s) and directories
 sort -> sorting
     usage : sort <text>
     flag : -r reverse order vertically
-           -n sort numerically
+           -n sort numerically (by value)
            -u sort uniquely
            -k key definition for sort tabular data
     demo : ls -l /home | head -n 15 | sort -k 5n non-human readable
@@ -108,12 +108,15 @@ tar -> create tarball
            tar -xvjf archive.tar.bz2
 
 gzip -> compress tarball, faster less compression [.tar.gz]
-gunzip -> uncompress
+    gunzip -> uncompress
+
 bzip2 -> compress tarbal, slower more compression [.tar.bz]
-bunzip2 -> uncomress
+    bunzip2 -> uncompress
+    
 zip -> zip file
-    demo : zip something.zip file1 file2 file3
+    demo : zip something.zip file1 file2 file3..
 unzip -> unzip file
+
 wc -> count
     flag : -l count line
            
@@ -123,34 +126,37 @@ sudo ->
 cat -> concatenate file(s) including audio etc.
     usage : cat <file(s)>
             cat file[1-5].txt > join.txt
+
 tac -> reverse output (first become last vice versa [vertically]) of cat, even if it's an audio file!
 rev -> reverse output horizontally by line (if it's a text)
 
 less -> pager a file like man page
+
 head -> list first X line [10 by default]
     flag : -n <X> specify how many line(s) to show
 tail -> list last X line [10 by default]
+
 Edit on Nano:
 nano -> text editor cli
 CONFIG FILE : /etc/nanorc
 shorcuts =>
-^X = exit
-^O = save
-^R = insert content from another file
-^W = search word case insensitive
-^\ = replace
-^K = cut line
-^U = paste
-^J = justify text
-^T = spell checker
-^C = current position [line&coloumn]
-^_ = go to the line 'xx'
-M-6 = copy
-M-A = highlight
-M-U = undo
-M-E = redo
-M- => Alt/cmd/esc key, stands for modify-
-^ => ctrl / control key
+    ^X = exit
+    ^O = save
+    ^R = insert content from another file
+    ^W = search word case insensitive
+    ^\ = replace
+    ^K = cut line
+    ^U = paste
+    ^J = justify text
+    ^T = spell checker
+    ^C = current position [line&coloumn]
+    ^_ = go to the line 'xx'
+    M-6 = copy
+    M-A = highlight
+    M-U = undo
+    M-E = redo
+    M- => Alt/cmd/esc key, stands for modify-
+    ^ => ctrl / control key
 
 [Features & Symbols]
 Tilda [~] : home/
