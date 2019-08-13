@@ -1,7 +1,8 @@
+[Basics]
 t
 pwd -> print working directory
 xargs
-echo
+echo -> like print function in the other language
 cd -> change directory
 ls -> list directory contents
     demo: list directory & its file ft. braces expansion
@@ -10,7 +11,8 @@ ls -> list directory contents
            -l list with detailed view/long listing format (permission, size, date, etc.)
            -h human readable size (not in bytes)
            -F if directories have a tail '/'
-
+           -R print recursively into subfolder
+            
 Navigating :
 touch -> make a file
     usage: touch file
@@ -21,6 +23,7 @@ touch -> make a file
         touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}
         making a file in random folder range
         touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt
+        
 mkdir -> make directory
     usage: mkdir folder
            mkdir <destination>
@@ -29,24 +32,29 @@ mkdir -> make directory
     protip: AVOID USING SPACE(S)
     demo: making many folder using the command
         mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
+        
 rm -> remove
     usage : rm
             rm -r delfolder/
     flag : -r recursively delete folder and its content WITHOUT asking the permission
            -i interactive, asking permission before delete
+           
 rmdir -> remove empty directories
     usage : rmdir deleteme/*
+    
 cp -> copy
     usage: cp file1 file2
            cp <file> <destination>
            cp <file1> <file2>.. <destination>
     flag : -r recursively copy folder and its content
+    
 mv -> moving & renaming file or directory
     usage : mv <source> <target>
      demo : mv oldfilename newfilename       <-- renaming
             mv oldfoldername/ newfoldername  <-- renaming
             mv newfolder/ ~/Documents/
             mv ~/Document/newfolder/ ./jackpot
+            
 locate -> locate/search for file
     usage : locate <path_pattern>
             locate 
@@ -120,9 +128,8 @@ unzip -> unzip file
 
 wc -> count
     flag : -l count line
-           
 
-sudo ->
+sudo -> Super User Do - (Like run as administrator on windows but more powerfull)
 
 cat -> concatenate file(s) including audio etc.
     usage : cat <file(s)>
