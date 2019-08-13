@@ -6,9 +6,10 @@ cd -> change directory
 ls -> list directory contents
     demo: list directory & its file ft. braces expansion
           ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
-    flag : -a
-           -l
-           -F
+    flag : -a list all including hidden file(s) & directories
+           -l list with detailed view/long listing format (permission, size, date, etc.)
+           -h human readable size (not in bytes)
+           -F if directories have a tail '/'
 
 Navigating :
 touch -> make a file
