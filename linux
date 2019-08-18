@@ -1,5 +1,5 @@
 [Basics]
-tty
+tty -> like t junction, save output stream to a file and forward it into next command as std input
 tee
 pwd -> print working directory
 xargs
