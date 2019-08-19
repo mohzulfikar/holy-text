@@ -1,8 +1,8 @@
 [Basics]
-tty -> like t junction, save output stream to a file and forward it into next command as std input
-tee
+tee -> like t junction, save output stream to a file and forward it into next command as std input
+tty -> print the file name of the terminal connected to standard input
 pwd -> print working directory
-xargs
+xargs -> build and execute command lines from standard input
 echo -> like print function in the other language
 cd -> change directory
 ls -> list directory contents
