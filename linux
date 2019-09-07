@@ -168,6 +168,14 @@ shorcuts =>
     M- => Alt/cmd/esc key, stands for modify-
     ^ => ctrl / control key
 
+[File Permissions]
+Read : view file(s), or only view content(s) of folder(s)
+
+Write : can edit file, or delete/add file to folder(s)
+
+Execute : can run the file (script)
+Modify permissions: 
+
 [Features & Symbols]
 Tilda [~] : home/
 Redirection: create a file based on the command output stream data
