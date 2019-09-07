@@ -174,7 +174,10 @@ Read : view file(s), or only view content(s) of folder(s)
 Write : can edit file, or delete/add file to folder(s)
 
 Execute : can run the file (script)
-Modify permissions: 
+Modify permissions: we can modify the permissions of file
+    >> Read is 4
+    >> Write is 2
+    >> Execute is 1
 
 [Features & Symbols]
 Tilda [~] : home/
