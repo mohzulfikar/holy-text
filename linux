@@ -146,6 +146,14 @@ head -> list first X line [10 by default]
 tail -> list last X line [10 by default]
     flag : -n <X> specify how many line(s) to show
     
+    
+file -> detect file type (with header)
+    usage: file <fileName>
+    
+strings -> cat all string variable (printable) and direct it to standard output
+    usage: string <fileName>
+    
+
 Edit on Nano:
 nano -> text editor on terminal
 CONFIG FILE : /etc/nanorc
