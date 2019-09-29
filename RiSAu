@@ -4,4 +4,6 @@ q = 5186293680901708283310486635502296344443842997512729390771686489350756041806
 
 e = 65537
 
-m = "pin12345".encode('utf-8')
+m = "pin12345".encode('utf-8') -> ubah ke bentuk Integer / desimal
+m = int("0x"+m.hex(), 0)
+
