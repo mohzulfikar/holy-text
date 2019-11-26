@@ -192,6 +192,11 @@ Tilda [~] : home/
 Redirection: create a file based on the command output stream data
     demo = ls -lh > out.txt , overwrite file if exist
            ls -lh >> out.txt , not overwrite the file instead print in newline
+          => advanced: we can redirect from standard input and error too using 0 or 2 before '>'
+    demo = ./script 0> text
+           cat file_that_doesnt_exist 2> err.txt
+          => also we can use '<' operator for passing input to a script or command
+    demo = sort < names.txt
 
 Braces expansion: for find/search/create file/directory with some pattern
     demo = 
