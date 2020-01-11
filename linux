@@ -5,6 +5,9 @@ You can list all available shell in linux using this command
 
 I reccomend to use zshell (+oh-my-zsh) among the other shells with firacode as the monospace font. 
 
+For windows users, you can enable the wsl feature and install linux distro via Microsoft Store, and for the terminal you can use Hyper or Windows Terminal (make sure that the terminal use wsl.exe not bash.exe) 
+
+The tutorial how to setup a good terminal is coming in the future... 
 
 Basic Command:
 tee -> like t junction, save output stream to a file and forward it into next command as std input
