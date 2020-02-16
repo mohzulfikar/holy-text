@@ -3,4 +3,6 @@ A Classic Cheatsheet Repo
 
 Content:
 - Basic shell scripting
-- (more coming soon)
+- Linux
+- Arch & Arch Based
+- (More comming soon)
