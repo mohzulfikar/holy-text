@@ -1,5 +1,6 @@
-[Basics]
-Trivial Knowledge:
+# Useful Linux Command Line Cheatsheet
+## The Basics
+###Trivial Knowledge:
 You can list all available shell in linux using this command
    $ cat /etc/shells
 
@@ -9,14 +10,15 @@ For windows users, you can enable the wsl feature and install linux distro via M
 
 The tutorial how to setup a good terminal is coming in the future... 
 
-Basic Command:
-tee -> like t junction, save output stream to a file and forward it into next command as std input
-tty -> print the file name of the terminal connected to standard input
-pwd -> print working directory
-xargs -> build and execute command lines from standard input
-echo -> like print function in the other language
-cd -> change directory
-ls -> list directory contents
+### Basic Command:
+
+- tee -> like t junction, save output stream to a file and forward it into next command as std input
+- tty -> print the file name of the terminal connected to standard input
+- pwd -> print working directory
+- xargs -> build and execute command lines from standard input
+- echo -> like print function in the other language
+- cd -> change directory
+- ls -> list directory contents
     demo: list directory & its file ft. braces expansion
           ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
     flag : -a list all including hidden file(s) & directories
@@ -25,8 +27,8 @@ ls -> list directory contents
            -F if directories have a tail '/'
            -R print recursively into subfolder
             
-Navigating :
-touch -> make a file
+### Navigating :
+- touch -> make a file
     usage: touch file
            touch ~/Documents/file
            echo "hello" > hello.txt
@@ -36,7 +38,7 @@ touch -> make a file
         making a file in random folder range
         touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt
         
-mkdir -> make directory
+- mkdir -> make directory
     usage: mkdir folder
            mkdir <destination>
            mkdir -p <path>
@@ -45,29 +47,29 @@ mkdir -> make directory
     demo: making many folder using the command
         mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
         
-rm -> remove file(s) or directory
+- rm -> remove file(s) or directory
     usage : rm
             rm -r delfolder/
     flag : -r recursively delete folder and its content WITHOUT asking the permission
            -i interactive, asking permission before delete [can be annoying]
            
-rmdir -> remove empty directories
+- rmdir -> remove empty directories
     usage : rmdir deleteme/*
     
-cp -> copy
+- cp -> copy
     usage: cp file1 file2
            cp <file> <destination>
            cp <file1> <file2>.. <destination>
     flag : -r recursively copy folder and its content
     
-mv -> moving & renaming file or directory
+- mv -> moving & renaming file or directory
     usage : mv <source> <target>
      demo : mv oldfilename newfilename       <-- renaming
             mv oldfoldername/ newfoldername  <-- renaming
             mv newfolder/ ~/Documents/
             mv ~/Document/newfolder/ ./jackpot
             
-locate -> locate/search for file
+- locate -> locate/search for file
     usage : locate <path_pattern>
             locate 
     flag : -i turn on case insensitive
@@ -77,10 +79,10 @@ locate -> locate/search for file
            --follow
            --existing
            
-upatedb -> update database of file and directory
+- upatedb -> update database of file and directory
         needs administrator previleges (sudo)
         
-find -> list every single file(s) and directories
+- find -> list every single file(s) and directories
     usage : find <base directories>
                  the default is current folder
             find . -maxdepth 1
@@ -96,7 +98,7 @@ find -> list every single file(s) and directories
     demo : menemukan jarum dalam jerami
             find jerami/ -type f -name "jarum" -exec mv {} ~/Desktop \;
             
-sort -> sorting the input stream
+- sort -> sorting the input stream
     usage : sort <text>
     flag : -r reverse order vertically
            -n sort numerically (by value)
@@ -106,14 +108,14 @@ sort -> sorting the input stream
            ls -lh /home | head -n 15 | sort -k 5h human readable size
            ls -lh /home | head -n 15 | sort -k 6M month coloumn
            
-grep -> search in data
+- grep -> search in data
     usage : grep <search_pattern> <source_file1>..
     flag : -c count line that contains <pattern>
            -i case insensitive
            -v show line that not contains <patten>
     demo : grep e hello.txt
 
-tar -> create a tarball
+- tar -> create a tarball
     usage : tar <flag(s)> <archive_name> <file>..
     flag : -c create new archive 
            -x extract from archive
@@ -128,44 +130,48 @@ tar -> create a tarball
            tar -cvjf archive.tar.bz2 file[1-3].txt
            tar -xvjf archive.tar.bz2
 
-gzip -> compress tarball, faster less compression [.tar.gz]
+- gzip -> compress tarball, faster less compression [.tar.gz]
     gunzip -> uncompress
 
-bzip2 -> compress tarbal, slower more compression [.tar.bz]
+- bzip2 -> compress tarbal, slower more compression [.tar.bz]
     bunzip2 -> uncompress
     
-zip -> zip file
+- zip -> zip file
     demo : zip something.zip file1 file2 file3..
-unzip -> unzip file
+- unzip -> unzip file
 
-wc -> newline, word, and byte count 
+- wc -> newline, word, and byte count 
     flag : -l count line
 
-sudo -> Super User Do - (Like run as administrator on windows but more powerfull)
+- sudo -> Super User Do - (Like run as administrator on windows but more powerfull)
 
-cat -> concatenate file(s) including audio etc.
+- cat -> concatenate file(s) including audio etc.
     usage : cat <file(s)>
             cat file[1-5].txt > join.txt
 
-tac -> reverse output (first become last vice versa [vertically]) of cat, even if it's an audio file!
-rev -> reverse output horizontally by line (if it's a text)
+- tac -> reverse output (first become last vice versa [vertically]) of cat, even if it's an audio file!
+- rev -> reverse output horizontally by line (if it's a text)
 
-less -> pager a file like man page
+- less -> pager a file like man page
 
-head -> list first X line [10 by default]
+- head -> list first X line [10 by default]
     flag : -n <X> specify how many line(s) to show
-tail -> list last X line [10 by default]
+- tail -> list last X line [10 by default]
     flag : -n <X> specify how many line(s) to show
     
     
-file -> detect file type (with header)
+- file -> detect file type (with header)
     usage: file <fileName>
     
-strings -> cat all string variable (printable) and direct it to standard output
+- strings -> cat all string variable (printable) and direct it to standard output
     usage: string <fileName>
-    
+  
+  .
+  .
+  .
+  More coming soon
 
-Edit on Nano:
+###Edit on Nano:
 nano -> text editor on terminal
 CONFIG FILE : /etc/nanorc
 shorcuts =>
@@ -188,7 +194,7 @@ shorcuts =>
     ^ => ctrl / control key
 
 
-Using VI(iMproved):
+###Using VI(iMproved):
 VIM -> very powerful cli text editor
 Basic command:
     V = enter visual mode
@@ -202,10 +208,12 @@ Basic command:
     :set nonu = unset the line numbering
     gg = go to first byte
     y = yank or copy (while on visual mode) 
+    "+y = yank to os clipboard (require extension or use gvim instead)
     p = paste
     dd = delete a line
+   
 
-[File Permissions]
+##[File Permissions]
 Read : view file(s), or only view content(s) of folder(s)
 
 Write : can edit file, or delete/add file to folder(s)
@@ -216,7 +224,7 @@ Modify permissions: we can modify the permissions of file
     >> Write is 2
     >> Execute is 1
 
-[Features & Symbols]
+##[Features & Symbols]
 Tilda [~] : home/
 Redirection: create a file based on the command output stream data
     demo = ls -lh > out.txt , overwrite file if exist
@@ -234,7 +242,7 @@ wildcards :
 ?  = Match only 1 any char  => file? = file1 = fileA =/= fileAB
 [] = Match in the bracket only  => file[1-3] = file1 = file 2 =/= file 4
 
-[protip]
+###[protip]
 to view hidden folder use ls -a command
 file with '.' prefix = hidden
 .  = current folder
