@@ -247,3 +247,5 @@ to view hidden folder use ls -a command
 file with '.' prefix = hidden
 .  = current folder
 .. = parent folder
+
+75% From the learning material on : https://www.udemy.com/course/linux-mastery/
