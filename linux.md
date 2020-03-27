@@ -1,6 +1,6 @@
 # Useful Linux Command Line Cheatsheet
 ## The Basics
-###Trivial Knowledge:
+### Trivial Knowledge:
 You can list all available shell in linux using this command
    $ cat /etc/shells
 
@@ -20,7 +20,7 @@ The tutorial how to setup a good terminal is coming in the future...
 - cd -> change directory
 - ls -> list directory contents
     demo: list directory & its file ft. braces expansion
-          ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
+          ```ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}```
     flag : -a list all including hidden file(s) & directories
            -l list with detailed view/long listing format (permission, size, date, etc.)
            -h human readable size (not in bytes)
@@ -28,88 +28,88 @@ The tutorial how to setup a good terminal is coming in the future...
            -R print recursively into subfolder
             
 ### Navigating :
-- touch -> make a file
-    usage: touch file
-           touch ~/Documents/file
-           echo "hello" > hello.txt
+- touch -> make a file \
+    usage: ```touch file
+           ```touch ~/Documents/file
+           ```echo "hello" > hello.txt
            
-    demo : making many file using command
-        touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}
-        making a file in random folder range
-        touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt
+    demo : making many file using command \
+        ```touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}``` \
+        ```making a file in random folder range``` \ 
+        ```touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt``` \
         
-- mkdir -> make directory
-    usage: mkdir folder
-           mkdir <destination>
-           mkdir -p <path>
-    flag : -p create entire path even if it doesnt exist
-    protip: AVOID USING SPACE(S)
-    demo: making many folder using the command
-        mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
+- mkdir -> make directory \
+    usage: ```mkdir folder```
+           ```mkdir <destination>```
+           ```mkdir -p <path>```
+    flag : -p create entire path even if it doesnt exist \
+    protip: AVOID USING SPACE(S) \
+    demo: making many folder using the command \
+        ```mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}```
         
-- rm -> remove file(s) or directory
-    usage : rm
-            rm -r delfolder/
-    flag : -r recursively delete folder and its content WITHOUT asking the permission
+- rm -> remove file(s) or directory \
+    usage : rm \ 
+            rm -r delfolder/ \
+    flag : -r recursively delete folder and its content WITHOUT asking the permission 
            -i interactive, asking permission before delete [can be annoying]
            
-- rmdir -> remove empty directories
+- rmdir -> remove empty directories \
     usage : rmdir deleteme/*
     
-- cp -> copy
-    usage: cp file1 file2
-           cp <file> <destination>
-           cp <file1> <file2>.. <destination>
+- cp -> copy \
+    usage: ```cp file1 file2```
+           ```cp <file> <destination>```
+           ```cp <file1> <file2>.. <destination>```
     flag : -r recursively copy folder and its content
     
 - mv -> moving & renaming file or directory
-    usage : mv <source> <target>
-     demo : mv oldfilename newfilename       <-- renaming
-            mv oldfoldername/ newfoldername  <-- renaming
-            mv newfolder/ ~/Documents/
-            mv ~/Document/newfolder/ ./jackpot
+    usage : ```mv <source> <target>```\
+     demo : ```mv oldfilename newfilename       <-- renaming ``` \
+            ```mv oldfoldername/ newfoldername  <-- renaming```
+            ```mv newfolder/ ~/Documents/ ```
+            ```mv ~/Document/newfolder/ ./jackpot```
             
-- locate -> locate/search for file
-    usage : locate <path_pattern>
-            locate 
-    flag : -i turn on case insensitive
-           --limit <number> limit result to number
-           -S database
-           -e <.extension> check existing file that still valid
-           --follow
-           --existing
+- locate -> locate/search for file \
+    usage : ```locate <path_pattern>```
+            ```locate ```
+    flag : -i turn on case insensitive \
+           --limit <number> limit result to number \
+           -S database \ 
+           -e <.extension> check existing file that still valid \
+           --follow \
+           --existing \
            
-- upatedb -> update database of file and directory
+- upatedb -> update database of file and directory \
         needs administrator previleges (sudo)
         
-- find -> list every single file(s) and directories
-    usage : find <base directories>
-                 the default is current folder
-            find . -maxdepth 1
-            find . -type f -size +100k -size -5M -exec cp {} <destination> \;
-    flag : -maxdepth limit depth of folder
-           -type <f> for file(s), <d> for directories
-           -name "<pattern>" find the path of file(s) that match to the pattern [case sensitive]
-           -iname "<pattern>" case insensitive
-           -size <+for greater, -for less>k/M/G specify the size of find results
-           -o or operator
-           -exec <command> \; execute command
-           -ok interactive y/n
-    demo : menemukan jarum dalam jerami
-            find jerami/ -type f -name "jarum" -exec mv {} ~/Desktop \;
+- find -> list every single file(s) and directories \
+    usage : ```find <base directories> 
+                 the default is current folder``` \
+            ```find . -maxdepth 1``` \
+            ```find . -type f -size +100k -size -5M -exec cp {} <destination> \;``` \
+    flag : -maxdepth limit depth of folder \
+           -type <f> for file(s), <d> for directories \
+           -name "<pattern>" find the path of file(s) that match to the pattern [case sensitive] \
+           -iname "<pattern>" case insensitive \ 
+           -size <+for greater, -for less>k/M/G specify the size of find results \
+           -o or operator \
+           -exec <command> ; execute command \
+           -ok interactive y/n \
+    demo : menemukan jarum dalam jerami \
+            ```find jerami/ -type f -name "jarum" -exec mv {} ~/Desktop ;``` \
             
-- sort -> sorting the input stream
-    usage : sort <text>
-    flag : -r reverse order vertically
-           -n sort numerically (by value)
-           -u sort uniquely
-           -k key definition for sort tabular data
-    demo : ls -l /home | head -n 15 | sort -k 5n non-human readable
-           ls -lh /home | head -n 15 | sort -k 5h human readable size
-           ls -lh /home | head -n 15 | sort -k 6M month coloumn
+- sort -> sorting the input stream \ 
+    usage : sort <text> \
+    flag : -r reverse order vertically \
+           -n sort numerically (by value) \
+           -u sort uniquely \
+           -k key definition for sort tabular data \
+    demo : ```ls -l /home | head -n 15 | sort -k 5n non-human readable``` \
+           ```ls -lh /home | head -n 15 | sort -k 5h human readable size``` \
+           ```ls -lh /home | head -n 15 | sort -k 6M month coloumn ``` \
            
 - grep -> search in data
-    usage : grep <search_pattern> <source_file1>..
+    usage : ```grep <search_pattern> <source_file1>..```
     flag : -c count line that contains <pattern>
            -i case insensitive
            -v show line that not contains <patten>
@@ -171,7 +171,7 @@ The tutorial how to setup a good terminal is coming in the future...
   .
   More coming soon
 
-###Edit on Nano:
+### Edit on Nano:
 nano -> text editor on terminal
 CONFIG FILE : /etc/nanorc
 shorcuts =>
@@ -194,7 +194,7 @@ shorcuts =>
     ^ => ctrl / control key
 
 
-###Using VI(iMproved):
+### Using VI(iMproved):
 VIM -> very powerful cli text editor
 Basic command:
     V = enter visual mode
@@ -213,7 +213,7 @@ Basic command:
     dd = delete a line
    
 
-##[File Permissions]
+## [File Permissions]
 Read : view file(s), or only view content(s) of folder(s)
 
 Write : can edit file, or delete/add file to folder(s)
@@ -224,7 +224,7 @@ Modify permissions: we can modify the permissions of file
     >> Write is 2
     >> Execute is 1
 
-##[Features & Symbols]
+## Features & Symbols
 Tilda [~] : home/
 Redirection: create a file based on the command output stream data
     demo = ls -lh > out.txt , overwrite file if exist
@@ -242,7 +242,7 @@ wildcards :
 ?  = Match only 1 any char  => file? = file1 = fileA =/= fileAB
 [] = Match in the bracket only  => file[1-3] = file1 = file 2 =/= file 4
 
-###[protip]
+### Protip
 to view hidden folder use ls -a command
 file with '.' prefix = hidden
 .  = current folder
