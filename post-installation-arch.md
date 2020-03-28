@@ -4,7 +4,7 @@
     use <code> # pacman -S linux-lts </code> to install lts kernel
  * ... (More Coming soon...)
  
-## Sub section for arch based user (Especially Manjaro)
+## Sub section for arch-based user (Especially Manjaro)
  * Update arch linux keyring and pacman database <br>
    <code> # pacman -Syy </code> < Syncronize pacman
  * Configure your pacman-mirrors see <a href="https://wiki.manjaro.org/Pacman-mirrors">this link</a>
@@ -21,3 +21,8 @@
  
 * Learn the pacman package manager, from <a href="https://www.youtube.com/watch?v=-dEuXTMzRKs&t=765s">this</a> or <a href="https://www.youtube.com/watch?v=-UvZ4BEAXFU">this link</a>
 * Learn Bash Scripting, <a href="https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2914s">this</a> or <a href="https://www.youtube.com/watch?v=v-F3YLd6oMw">this link</a>
+
+## Sub section for installing blackarch database
+ * Just Follow the steps on <a href="https://blackarch.org/downloads.html#install-repo">this site</a>
+ * Don't forget to update the database after that and do the upgrade.
+    <code> # pacman -Syyu </code>
