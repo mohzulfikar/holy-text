@@ -8,6 +8,17 @@ Content:
 - Poros Security Quest
 - (More comming soon)
 
->! spoiler, work on progress
+<details>
+  <summary>Spoiler</summary>
+  
+  > spoiler, work on progress
+  
+</details>
 
-> ! spoiler again, you can contribute to
+<details>
+  <summary>Spoiler again</summary>
+  
+  > You can contribute too
+  
+</details>
+
