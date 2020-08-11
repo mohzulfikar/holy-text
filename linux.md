@@ -175,43 +175,46 @@ The tutorial how to setup a good terminal is coming in the future...
 nano -> text editor on terminal
 CONFIG FILE : /etc/nanorc
 shorcuts =>
-    ^X = exit
-    ^O = save
-    ^R = insert content from another file
-    ^W = search word case insensitive
-    ^\ = replace
-    ^K = cut line
-    ^U = paste
-    ^J = justify text
-    ^T = spell checker
-    ^C = current position [line&coloumn]
-    ^_ = go to the line 'xx'
-    M-6 = copy
-    M-A = highlight
-    M-U = undo
-    M-E = redo
-    M- => Alt/cmd/esc key, stands for modify-
-    ^ => ctrl / control key
-
+   ```
+   ^X = exit
+   ^O = save
+   ^R = insert content from another file
+   ^W = search word case insensitive
+   ^\ = replace
+   ^K = cut line
+   ^U = paste
+   ^J = justify text
+   ^T = spell checker
+   ^C = current position [line&coloumn]
+   ^_ = go to the line 'xx'
+   M-6 = copy
+   M-A = highlight
+   M-U = undo
+   M-E = redo
+   M- => Alt/cmd/esc key, stands for modify-
+   ^ => ctrl / control key
+   ```
 
 ### Using VI(iMproved):
 VIM -> very powerful cli text editor
 Basic command:
-    V = enter visual mode
-    I = enter insert mode
-    Esc = exit current mode or abort command
-    :w = save current file
-    :q = quit vim
-    :q! = quit without saving
-    :wq = save and quit vim
-    :set nu = set visible number on each line
-    :set nonu = unset the line numbering
-    gg = go to first byte
-    y = yank or copy (while on visual mode) 
-    "+y = yank to os clipboard (require extension or use gvim instead)
-    p = paste
-    dd = delete a line
-   
+   ```
+   V = enter visual mode
+   I = enter insert mode
+   Esc   = exit current mode or abort command
+   :w    = save current file
+   :q    = quit vim
+   :q!   = quit without saving
+   :wq   = save and quit vim
+   :set nu = set visible number on each line
+   :set nonu = unset the line numbering
+   gg    = go to first byte
+   y     = yank or copy (while on visual mode) 
+   "+y   = yank to os clipboard (require extension or use gvim instead)
+   p     = paste
+   dd    = delete a line
+   /     = start a search (followed by search term e.g. /hello)
+   ```
 
 ## [File Permissions]
 Read : view file(s), or only view content(s) of folder(s)
