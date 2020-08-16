@@ -239,14 +239,25 @@ Redirection: create a file based on the command output stream data
     demo = sort < names.txt
 
 Braces expansion: for find/search/create file/directory with some pattern
-    demo = 
-wildcards :
-*  = Match 1 or more char  => file* = fileA = fileSOMETHING = file.<extensions>
-?  = Match only 1 any char  => file? = file1 = fileA =/= fileAB
-[] = Match in the bracket only  => file[1-3] = file1 = file 2 =/= file 4
+
+demo (wildcards):
+
+   \*  = Match 1 or more char  => file* = fileA = fileSOMETHING = file.<extensions>
+
+   ?  = Match only 1 any char  => file? = file1 = fileA =/= fileAB
+
+   [] = Match in the bracket only  => file[1-3] = file1 = file 2 =/= file 4
 
 ### Protip
-to view hidden folder use ls -a command
-file with '.' prefix = hidden
-.  = current folder
-.. = parent folder
+
+* to view hidden folder use ls -a command
+
+* file with '.' prefix = hidden
+
+* .  = current folder
+
+* .. = parent folder
+
+* \# = run in terminal as root
+
+* $  = run in terminal as non-root
