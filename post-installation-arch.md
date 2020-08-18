@@ -1,8 +1,10 @@
 # POST Installation Arch (or Arch based linux)
- * Installing GUI, see <a href=https://wiki.archlinux.org/index.php/Desktop_environment> this link </a>
+ * Installing DE, see <a href=https://wiki.archlinux.org/index.php/Desktop_environment> this link </a>
  * Install LTS kernel and switch to LTS kernel, see <a href=https://wiki.archlinux.org/index.php/Kernel> this </a> or <a href="https://www.youtube.com/watch?v=b-H3jURTgqk"> this link </a> <br>
     use <code> # pacman -S linux-lts </code> to install lts kernel
- * ... (More Coming soon...)
+ * Install Timeshift and Backup Everything, save it on your external HDD / backup drive.
+ * Install VA-API / NVENC for media codec, if your hardware support HW-Acceleration read [this guide](https://wiki.archlinux.org/index.php/Hardware_video_acceleration) to enable it.
+ * ... (More Coming Soon)
  
 ## Sub section for arch-based user (Especially Manjaro)
  * Update arch linux keyring and pacman database <br>
