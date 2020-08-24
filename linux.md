@@ -12,20 +12,29 @@ The tutorial how to setup a good terminal is coming in the future...
 
 ### Basic Command:
 
-- tee -> like t junction, save output stream to a file and forward it into next command as std input
-- tty -> print the file name of the terminal connected to standard input
-- pwd -> print working directory
-- xargs -> build and execute command lines from standard input
-- echo -> like print function in the other language
-- cd -> change directory
-- ls -> list directory contents
-    demo: list directory & its file ft. braces expansion
-          ```ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}```
-    flag : -a list all including hidden file(s) & directories
-           -l list with detailed view/long listing format (permission, size, date, etc.)
-           -h human readable size (not in bytes)
-           -F if directories have a tail '/'
-           -R print recursively into subfolder
+- tee => like t junction, save output stream to a file and forward it into next command as std input
+- tty => print the file name of the terminal connected to standard input
+- pwd => print working directory
+- xargs => build and execute command lines from standard input
+- echo => like print function in the other language
+- cd => change directory
+- ls => list directory contents
+    
+    demo: 
+    
+    list directory & its file ft. braces expansion,
+
+    ```bash
+    ls {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
+    ```
+          
+    flag : 
+
+        -a list all including hidden file(s) & directories
+        -l list with detailed view/long listing format (permission, size, date, etc.)
+        -h human readable size (not in bytes)
+        -F if directories have a tail '/'
+        -R print recursively into subfolder
             
 ### Navigating :
 - touch -> make a file \
@@ -33,10 +42,15 @@ The tutorial how to setup a good terminal is coming in the future...
            ```touch ~/Documents/file
            ```echo "hello" > hello.txt
            
-    demo : making many file using command \
-        ```touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}``` \
-        ```making a file in random folder range``` \ 
-        ```touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt``` \
+    demo : 
+
+    making many file using command \
+        
+        touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}
+    
+    making a file in random folder range <br>
+
+        touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt
         
 - mkdir -> make directory \
     usage: ```mkdir folder```
