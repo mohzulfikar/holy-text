@@ -38,13 +38,15 @@ The tutorial how to setup a good terminal is coming in the future...
             
 ### Navigating :
 - touch -> make a file \
-    usage: ```touch file
-           ```touch ~/Documents/file
-           ```echo "hello" > hello.txt
+    usage: 
+        
+        touch file
+        touch ~/Documents/file
+        echo "hello" > hello.txt
            
     demo : 
 
-    making many file using command \
+    making many file using command <br>
         
         touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}
     
@@ -52,14 +54,21 @@ The tutorial how to setup a good terminal is coming in the future...
 
         touch jerami/folder$(shuf -i 1-500 -n 1)/jarum.txt
         
-- mkdir -> make directory \
-    usage: ```mkdir folder```
-           ```mkdir <destination>```
-           ```mkdir -p <path>```
-    flag : -p create entire path even if it doesnt exist \
-    protip: AVOID USING SPACE(S) \
-    demo: making many folder using the command \
-        ```mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}```
+- mkdir -> make directory <br>
+    usage: 
+
+        mkdir folder
+        mkdir <destination>
+        mkdir -p <path>
+    
+    flag : 
+    
+        -p create entire path even if it doesnt exist
+    protip: **AVOID USING SPACE(S)**
+    
+    demo: making many folder using the command <br>
+    
+        mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
         
 - rm -> remove file(s) or directory \
     usage : rm \ 
