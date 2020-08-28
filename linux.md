@@ -71,26 +71,42 @@ The tutorial how to setup a good terminal is coming in the future...
         mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
         
 - rm -> remove file(s) or directory \
-    usage : rm \ 
-            rm -r delfolder/ \
-    flag : -r recursively delete folder and its content WITHOUT asking the permission 
-           -i interactive, asking permission before delete [can be annoying]
+    usage :
+
+        rm 
+        rm -r delfolder/
+
+    flag : 
+        
+        -r recursively delete folder and its content WITHOUT asking the permission 
+        -i interactive, asking permission before delete [can be annoying]
            
 - rmdir -> remove empty directories \
-    usage : rmdir deleteme/*
+    usage : 
+    
+        rmdir deleteme/*
     
 - cp -> copy \
-    usage: ```cp file1 file2```
-           ```cp <file> <destination>```
-           ```cp <file1> <file2>.. <destination>```
-    flag : -r recursively copy folder and its content
+    usage: 
+    
+        cp file1 file2
+        cp <file> <destination>
+        cp <file1> <file2>.. <destination>
+    
+    flag : 
+        
+        -r recursively copy folder and its content
     
 - mv -> moving & renaming file or directory
-    usage : ```mv <source> <target>```\
-     demo : ```mv oldfilename newfilename       <-- renaming ``` \
-            ```mv oldfoldername/ newfoldername  <-- renaming```
-            ```mv newfolder/ ~/Documents/ ```
-            ```mv ~/Document/newfolder/ ./jackpot```
+    usage : 
+        
+        mv <source> <target>
+     demo : 
+        
+        mv oldfilename newfilename       <-- renaming
+        mv oldfoldername/ newfoldername  <-- renaming
+        mv newfolder/ ~/Documents/
+        mv ~/Document/newfolder/ ./jackpot
             
 - locate -> locate/search for file \
     usage : ```locate <path_pattern>```
