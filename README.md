@@ -18,7 +18,7 @@ Content:
 <details>
   <summary>Spoiler again</summary>
   
-  > You can contribute too
+  > You can contribute too, just issue or PR :)
   
 </details>
 
